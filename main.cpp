@@ -34,5 +34,8 @@ int main(){
 		cout << arr2[i] << ' ';
 	cout << endl;
 
+	task_7_print(arr1, n);
+	cout << endl;
+
 	return 0;
 }

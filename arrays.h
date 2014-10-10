@@ -13,5 +13,7 @@ void task_5_copy(int * , int * , int );
 
 void task_6_poor_copy(int * , int * , int );
 
+void task_7_print(int * , int , char delim = ' ');
+
 /*ARRAYS_H*/
 #endif
