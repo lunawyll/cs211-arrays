@@ -14,7 +14,7 @@ using namespace std;
 int main()
 {
 	string src("12 plus 45 minus 39 is 18\n");
-	int i, nwhite, nother;
+	int i = 0, nwhite, nother;
 	const int size = 10;
 	int ndigit[size];
 	nwhite = nother = 0;
