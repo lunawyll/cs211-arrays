@@ -1,9 +1,8 @@
 #include <iostream>
- 
+#include <ctime>
 #include <cstdlib>
  
-using std::rand;
-using std::swap;
+using namespace std;
  
 // pivot - "опорный" элемент
 // partition - переупорядочивает элементы части массива,
@@ -25,4 +24,12 @@ void my_qsort(int * arr, int n) {
 	int newPivotIdx = partition(arr, arr + n, *pivotPtr) - arr;
 	my_qsort(arr, newPivotIdx + 1);
 	my_qsort(arr + newPivotIdx, n - (newPivotIdx + 1));
+}
+
+
+int main(){
+
+
+
+	return 0;
 }
