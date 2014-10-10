@@ -4,6 +4,7 @@
 using namespace std;
 
 int main(){
+	cout << "Array test..\n";
 	task_1();
 	task_2();
 	cout << task_3_zero() << endl;
@@ -36,6 +37,10 @@ int main(){
 
 	task_7_print(arr1, n);
 	cout << endl;
+	cout << "Testing finished!\n";
+
+	//--------------------------------------
+
 
 	return 0;
 }
