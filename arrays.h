@@ -9,5 +9,7 @@ int task_3_zero();
 
 void task_4();
 
+void task_5_copy(int * , int * , int );
+
 /*ARRAYS_H*/
 #endif
