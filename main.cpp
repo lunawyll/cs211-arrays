@@ -1,5 +1,6 @@
 #include <iostream>
 #include "arrays.h"
+#include "count.h"
 
 using namespace std;
 
