@@ -1,5 +1,6 @@
 #include <string>
 #include <iostream>
+#include <algorithm>
 
 using namespace std;
 
@@ -10,6 +11,26 @@ using namespace std;
  *           cf. picture in https://en.wikipedia.org/wiki/Histogram
  * 
  */
+
+void print_diagramm(const int * dig, int white, int other){
+	int mx = max(*max_element(dig, dig + 10), max(white, other));
+	int pr[12];
+	for (int i = 0; i < 10; i++)
+		pr[i] = mx - dig[i];
+	pr[10] = mx - white;
+	pr[11] = mx - other;
+	for (int i = mx; i > 0; --i){
+		
+		for (int j = 0; j < 12; j++){
+			cout << (pr[j]-- ? ' ' : '*') << ' ';
+			pr[j] = max(pr[j], 0);
+		}
+		cout << endl;
+	}
+	for (int i = 0; i < 10; i++)
+		cout << i << ' ';
+	cout << "w o\n";
+}
 
 int main()
 {
@@ -34,4 +55,5 @@ int main()
 	
 	cout << ", white space = " << nwhite 
 		 << ", other = " << nother << endl;
+	print_diagramm(ndigit, nwhite, nother);
 }
