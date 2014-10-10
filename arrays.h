@@ -7,5 +7,7 @@ void task_2();
 
 int task_3_zero();
 
+void task_4();
+
 /*ARRAYS_H*/
 #endif
