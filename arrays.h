@@ -11,5 +11,7 @@ void task_4();
 
 void task_5_copy(int * , int * , int );
 
+void task_6_poor_copy(int * , int * , int );
+
 /*ARRAYS_H*/
 #endif
